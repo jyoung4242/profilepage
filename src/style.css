@@ -1,1 +1,121 @@
-/*style.css*/ 
+/*style.css*/
+@font-face {
+  font-family: dosis;
+  src: url("./assets/Dosis.ttf");
+}
+
+@font-face {
+  font-family: openSans;
+  src: url("./assets/OpenSans.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.lrg {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./assets/brushed\ AL\ background.jpg");
+}
+
+.sml {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./assets/brushed\ AL\ background.jpg");
+}
+
+.headshot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: 90%;
+  transform: translate(-50%, -50%);
+  border: 10px white;
+  clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.headshotbkgnd {
+  position: relative;
+  top: 12%;
+  left: 45%;
+  width: 30%;
+  aspect-ratio: 1/1;
+  background-color: white;
+  clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  z-index: 2;
+}
+
+.rightmasking {
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  width: 30%;
+  height: 100vh;
+  background-color: white;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 40% 50%, 0% 0%);
+}
+
+.namediv {
+  font-family: dosis;
+  font-size: 3vw;
+  font-weight: bold;
+  position: fixed;
+  color: #eeeeee;
+  top: 27%;
+  right: 2%;
+  width: 15%;
+  aspect-ratio: 1.1/1;
+  text-align: center;
+  background-image: url("./assets/brushed\ AL\ background.jpg");
+  clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.namediv > span {
+  text-shadow: 2px 2px 2px black;
+}
+
+.hero {
+  font-family: dosis;
+  font-size: 6vw;
+  font-weight: bold;
+  position: fixed;
+  color: #595959;
+  top: 1%;
+  left: 1%;
+  width: 60%;
+  text-align: left;
+  text-shadow: 3px 3px 2px #dddddd;
+}
+
+.svgdiv {
+  position: fixed;
+  width: 42%;
+  top: 39%;
+  left: 10%;
+  aspect-ratio: 3/1;
+  transform: rotate(-25deg) scale(1.2);
+}
+
+.footer {
+  position: fixed;
+  width: 100vw;
+  background-color: white;
+  bottom: 0%;
+  left: 0%;
+  height: 7%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer > a {
+  color: #595959;
+}
