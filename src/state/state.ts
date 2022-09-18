@@ -25,9 +25,13 @@ export let model = {
       } else if (window.matchMedia("(orientation: landscape)").matches) {
         model.global.orientation = "landscape";
       }
-      if ((model.global.windowWidth < 800 || model.global.screenWidth < 1000) && model.global.orientation == "portrait")
+      if ((model.global.windowWidth < 800 || model.global.screenWidth < 1000) && model.global.orientation == "portrait") {
         model.global.size = "small";
-      else model.global.size = "large";
+        model.main.mug = SMmugshot;
+      } else {
+        model.global.size = "large";
+        model.main.mug = mugshot;
+      }
 
       console.log(model.global.orientation);
     },

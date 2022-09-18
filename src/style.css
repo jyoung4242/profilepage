@@ -19,12 +19,16 @@
   width: 100vw;
   height: 100vh;
   background-image: url("./assets/big_AL_background.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 
 .sml {
   width: 100vw;
   height: 100vh;
   background-image: url("./assets/small_AL_background.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 
 .headshot {
