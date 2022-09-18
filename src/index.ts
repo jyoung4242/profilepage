@@ -60,8 +60,12 @@ let template = `
         </div>
     </div>
     <div class="sml" \${!==global.respContent}> 
+        <div class="imgDiv">
+            <img alt="" src="\${menu.src}" \${click@=>menu.toggle}/>
+        </div>
         <div class="menu \${menu.cssString}" >
-            <img alt="" src="\${menu.src}"/ \${click@=>menu.toggle}>
+            
+            
             <div class="menuLinks">
                 <a href="#" \${===menu.isOpen}>My Story</a>
                 <a href="#" \${===menu.isOpen}>Projects</a>
