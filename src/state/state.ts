@@ -1,4 +1,5 @@
 import mugshot from "../assets/headshot.jpeg";
+import SMmugshot from "../assets/small_headshot.jpeg";
 import menuopen from "../assets/menu.png";
 import menuclose from "../assets/menuclose.png";
 

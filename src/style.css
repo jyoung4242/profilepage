@@ -18,13 +18,13 @@
 .lrg {
   width: 100vw;
   height: 100vh;
-  background-image: url("./assets/brushed\ AL\ background.jpg");
+  background-image: url("./assets/big_AL_background.jpg");
 }
 
 .sml {
   width: 100vw;
   height: 100vh;
-  background-image: url("./assets/brushed\ AL\ background.jpg");
+  background-image: url("./assets/small_AL_background.jpg");
 }
 
 .headshot {
@@ -70,7 +70,7 @@
   width: 15%;
   aspect-ratio: 1.1/1;
   text-align: center;
-  background-image: url("./assets/brushed\ AL\ background.jpg");
+  background-image: url("./assets/small_AL_background.jpg");
   clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
   display: flex;
   flex-direction: column;
