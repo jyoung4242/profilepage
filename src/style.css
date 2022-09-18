@@ -148,13 +148,22 @@
 
 .smheadshotbkgnd {
   position: relative;
-  top: 15%;
-  left: 42%;
-  width: 55%;
+  top: 10vw;
+  left: 45vw;
+  width: 50vw;
   aspect-ratio: 1/1;
   background-color: white;
   clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
   z-index: 2;
+}
+
+.smsvgdiv {
+  position: fixed;
+  width: 40vw;
+  top: 65vw;
+  left: 15vw;
+  aspect-ratio: 3/1;
+  transform: rotate(-40deg) scale(1.5);
 }
 
 .smfooter {
@@ -180,15 +189,6 @@
   position: fixed;
   color: #595959;
   text-shadow: 2px 1px 2px #00000066;
-}
-
-.smsvgdiv {
-  position: fixed;
-  width: 50vw;
-  top: 75vw;
-  left: 15vw;
-  aspect-ratio: 3/1;
-  transform: rotate(-40deg) scale(1.5);
 }
 
 .menu {
