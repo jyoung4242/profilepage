@@ -131,9 +131,15 @@ model.global.screenWidth = window.screen.availWidth;
 model.global.screenHeight = window.screen.availHeight;
 model.global.windowWidth = window.innerWidth;
 model.global.windowHeight = window.innerHeight;
-document.body.addEventListener("touchstart", function (e) {
-  e.preventDefault();
-});
+window.addEventListener("scroll", preventMotion, false);
+window.addEventListener("touchmove", preventMotion, false);
+
+function preventMotion(event: any) {
+  window.scrollTo(0, 0);
+  event.preventDefault();
+  event.stopPropagation();
+}
+
 window.addEventListener("resize", model.global.update);
 if (model.global.windowWidth < 800 || model.global.screenWidth < 1000) model.global.size = "small";
 else model.global.size = "large";
