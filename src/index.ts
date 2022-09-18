@@ -131,8 +131,12 @@ model.global.screenWidth = window.screen.availWidth;
 model.global.screenHeight = window.screen.availHeight;
 model.global.windowWidth = window.innerWidth;
 model.global.windowHeight = window.innerHeight;
+document.body.addEventListener("touchstart", function (e) {
+  e.preventDefault();
+});
 window.addEventListener("resize", model.global.update);
 if (model.global.windowWidth < 800 || model.global.screenWidth < 1000) model.global.size = "small";
 else model.global.size = "large";
-
-setInterval(() => UI.update(), 1000 / 60);
+setTimeout(() => {
+  setInterval(() => UI.update(), 1000 / 60);
+}, 1000);
