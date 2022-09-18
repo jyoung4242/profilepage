@@ -105,6 +105,7 @@
 }
 
 .footer {
+  font-size: 1.5vw;
   position: fixed;
   width: 100vw;
   background-color: white;
@@ -118,4 +119,124 @@
 
 .footer > a {
   color: #595959;
+}
+
+.smhero {
+  font-family: dosis;
+  font-size: 8vw;
+  font-weight: bold;
+  position: fixed;
+  color: #595959;
+  top: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  text-align: left;
+  text-shadow: 3px 3px 2px #dddddd;
+}
+
+.smheadshot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: 90%;
+  transform: translate(-50%, -50%);
+  border: 10px white;
+  clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.smheadshotbkgnd {
+  position: relative;
+  top: 15%;
+  left: 42%;
+  width: 55%;
+  aspect-ratio: 1/1;
+  background-color: white;
+  clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  z-index: 2;
+}
+
+.smfooter {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 10%;
+  width: 100vw;
+  background-color: white;
+  border: 1px transparent;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.smfooter > span {
+  font-family: dosis;
+  font-size: 6vw;
+  font-weight: bold;
+  position: fixed;
+  color: #595959;
+}
+
+.smsvgdiv {
+  position: fixed;
+  width: 50vw;
+  top: 75vw;
+  left: 15vw;
+  aspect-ratio: 3/1;
+  transform: rotate(-40deg) scale(1.5);
+}
+
+.menu {
+  position: fixed;
+  top: 2%;
+  left: 2%;
+  width: 10vw;
+  height: 10vw;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.menu > img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menuOpen {
+  width: 30vw;
+  height: 50vh;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  z-index: 3;
+}
+
+.menuLinks {
+  width: 30vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.menuLinks > a {
+  font-family: openSans;
+  color: #595959;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  font-size: 3vw;
+}
+
+.menuOpen > img {
+  position: relative;
+  top: 25px;
+  left: 25px;
+  transform: translate(-50%, -50%);
 }
