@@ -144,12 +144,11 @@ function preventMotion(event: any) {
   event.preventDefault();
   event.stopPropagation();
 }
-
+model.menu.src = menuopen;
 window.addEventListener("resize", model.global.update);
 if (model.global.windowWidth < 800 || model.global.screenWidth < 1000) {
   model.global.size = "small";
   model.main.mug = SMmugshot;
-  model.menu.src = menuopen;
 } else {
   model.global.size = "large";
   model.main.mug = mugshot;
