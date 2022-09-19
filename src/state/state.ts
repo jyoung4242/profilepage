@@ -37,10 +37,10 @@ export let model = {
     },
   },
   main: {
-    mug: mugshot,
+    mug: "",
   },
   menu: {
-    src: menuopen,
+    src: "",
     cssString: "",
     isOpen: false,
     toggle: (_event: any, model: any) => {
