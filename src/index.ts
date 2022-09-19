@@ -136,8 +136,9 @@ model.global.screenWidth = window.screen.availWidth;
 model.global.screenHeight = window.screen.availHeight;
 model.global.windowWidth = window.innerWidth;
 model.global.windowHeight = window.innerHeight;
-document.addEventListener("scroll", preventMotion, false);
-document.addEventListener("touchmove", preventMotion, false);
+window.addEventListener("scroll", preventMotion, false);
+window.addEventListener("touchmove", preventMotion, false);
+window.addEventListener("touchstart", preventMotion, false);
 
 function preventMotion(event: any) {
   window.scrollTo(0, 0);
